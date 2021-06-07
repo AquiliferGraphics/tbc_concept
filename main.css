@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
+
+body {
+background-color: #DBE2E8;
+font-family: Poppins;
+}
+
+div#nav {
+position: fixed;
+display: block;
+left: 0px;
+top: 0px;
+width: 17%;
+max-width: 270px;
+transition: height 0.7s, background-image 0.7s;
+height: 170px;
+background-image: linear-gradient(to bottom, rgba(25,40,97,0.9) 0%, rgba(25,40,97,0.9) 70%, rgba(25,40,97,0) 100%);
+overflow: hidden;
+}
+
+
+div#nav:hover {
+height: fit-content;
+background-image: linear-gradient(to bottom, rgba(25,40,97,0.9) 0%, rgba(25,40,97,0.9) 90%, rgba(25,40,97,0) 100%);
+}
+
+
+div#nav img#navLogo {
+display: block;
+margin-top: 20px;
+width: 90%;
+max-width: 180px;
+margin-right: auto;
+margin-left: auto;
+}
+
+img.showNav {
+display: block;
+margin-right: auto;
+margin-left: auto;
+transition: transform 0.5s;
+}
+
+div#nav:hover img.showNav {
+transform: rotate(180deg);
+}
+
+
+
+ul#navLinks {
+list-style-type: none;
+margin-top: 50px;
+padding-left: 0;
+margin-left: 10%;
+}
+
+ul#navLinks li a {
+display: block;
+font-family: Poppins;
+font-size: 2.4vw;
+text-decoration: none;
+color: #DBE2E8;
+margin-top: 20px;
+}
+
+ul#navLinks li a:hover {
+color: white;
+}
+
+ul#navLinks li.at a {
+
+}
+
+ul#navLinks li.at a:hover {
+
+}
+
+ul#navLinks li.give a {
+padding-bottom: 60px;
+}
+
+
+
+
+
+div#mobiNav {
+display: block;
+position: fixed;
+top: 0px;
+left: 0px;
+width: 100%;
+height: 60px;
+background-color: rgba(25,40,97,1);
+visibility: hidden;
+}
+
+div#mobiNavR {
+display: block;
+position: fixed;
+top: 0px;
+right: 0px;
+visibility: hidden;
+}
+
+img#MnavLogo {
+height: 40px;
+margin-top: 10px;
+margin-left: 10px;
+}
+
+img.MshowNav {
+height: 40px;
+margin-top: 10px;
+margin-right: 10px;
+margin-left: 250px;
+}
+
+img.MhideNav {
+height: 40px;
+margin-right: 10px;
+margin-bottom: 10px;
+margin-left: 250px;
+}
+
+#Mshow {
+display: none;
+}
+
+#Mshow:target {
+display: block;
+width: 300px;
+background-color: rgba(25,40,97,1);
+}
+
+
+
+ul#MnavLinks {
+list-style-type: none;
+margin-top: 0px;
+padding-top: 50px;
+padding-bottom: 20px;
+text-align: right;
+padding-right: 20px;
+}
+
+ul#MnavLinks a {
+text-decoration: none;
+font-size: 30;
+color: white;
+}
+
+
+
+
+div#hero {
+position: absolute;
+display: block;
+left: 0px;
+top: 0px;
+width: 100%;
+height: 700px;
+background-image: url("baptism_old1.jpg");
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+
+
+
+div#social {
+display: block;
+position: fixed;
+top: 0px;
+right: 0px;
+width: 100px;
+height: 60px;
+background-color: #8B8B8B;
+overflow: hidden;
+}
+
+div#social img {
+height: 40px;
+vertical-align: middle;
+}
+
+
+
+
+
+div#section {
+display: block;
+margin-right: 20%;
+margin-left: 20%;
+position: absolute;
+top: 700px;
+left: 0px;
+}
+
+
+
+@media screen and (max-width: 900px) {
+	div#nav, div#social, div#hero {
+	visibility: hidden;
+	}
+
+	div#section {
+	top: 50px;
+	}
+
+	div#mobiNav, div#mobiNavR {
+	visibility: visible;
+	}
+}
+
+
+
+
+
+
+div#section h1 {
+display: block;
+font-family: Poppins;
+font-size: 5vw;
+color: #6F1818;
+}
+
+div.one h1 {
+text-align: right;
+}
+
+div#section p {
+font-size: 20;
+}
+
+div#section h3 {
+display: block;
+font-family: Cinzel;
+font-style: italic;
+font-weight: bolder;
+font-size: 26;
+text-align: right;
+}
